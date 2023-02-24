@@ -1,2 +1,2 @@
-[] - Iniciar Repositorio
-[] - Configuração inicial das pastas do Projeto
+[X] - Iniciar Repositorio
+[X] - Configuração inicial das pastas do Projeto
