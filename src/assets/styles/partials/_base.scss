@@ -27,7 +27,7 @@ main {
   text-align: center;
 
   width: 50rem;
-  margin: 10% auto;
+  margin: 25vh auto;
   background: map-get(variables.$neutralColors, darkGrayishBlue);
   border-radius: 2.2rem;
 
@@ -35,11 +35,15 @@ main {
   justify-content: space-between;
   padding: 3rem;
   position: relative;
+  @media screen and (max-width: 600px) {
+    margin: 15vh auto;
+  }
 }
 
 h1 {
   color: map-get(variables.$primarColors, neonCyan);
   text-transform: uppercase;
+  font-size: 1.4rem;
 }
 
 p {
@@ -54,12 +58,17 @@ button {
   padding: 2rem;
   border-radius: 100%;
 
+  cursor: pointer;
   position: absolute;
   bottom: -3.5rem;
+
+  &:hover {
+    box-shadow: 0 0 1.5rem 0.1rem map-get(variables.$primarColors, neonCyan);
+  }
 }
 
 picture {
-  margin: 3rem 0;
+  margin: 2.5rem 0;
   img {
     max-width: 100%;
   }
